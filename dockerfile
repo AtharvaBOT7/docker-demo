@@ -18,5 +18,6 @@ ENV FLASK_APP=app.py
 
 # Run app.py when the container launches
 CMD ["flask", "run", "--host=0.0.0.0", "--port=5001"]
+# We have to give a separate parameter for the port to run the Flask app as on our local machine we are running the flask service on port 5001 and the default port is 5000.
 # Note: The port can be changed as needed, here it is set to 5001
 
