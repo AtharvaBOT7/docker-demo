@@ -17,6 +17,6 @@ EXPOSE 5001
 ENV FLASK_APP=app.py
 
 # Run app.py when the container launches
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5001"]
 # Note: The port can be changed as needed, here it is set to 5001
 
